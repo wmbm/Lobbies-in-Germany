@@ -1,11 +1,11 @@
 import PyPDF2
 import os
-from scrape_lobby_pdf import setup_folders
+from utils import setup_folders
 
 # Note: This can take some time!
 
 def combine_pdfs(pdf_dir, output_path):
-    merger = PyPDF2.PdfFileMerger()
+    merger = PyPDF2.PdfMerger()
     
     # Get list of PDF files in the directory
     pdf_files = [f for f in os.listdir(pdf_dir) if f.endswith('.pdf')]
@@ -31,4 +31,6 @@ print(f"Location of scraped PDFs: {data_path}")
 pdf_directory = data_path
 output_pdf_path = data_path + 'combined.pdf'
 
+
 combine_pdfs(pdf_directory, output_pdf_path)
+print('PDFs combined!')

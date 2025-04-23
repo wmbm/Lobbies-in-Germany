@@ -1,45 +1,10 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 import requests
 import json
 import numpy as np
 import os
-import glob
 import time
-from datetime import datetime
-
-def setup_folders(data_dir, base_directory = 'lobby_germany/PDFs/', clear_all=True):
-    """
-    Create directory structure for organizing petition data.
-
-    Parameters:
-    data_dir (str): The root directory where the data folders will be created.
-    base_directory (str, optional): The base directory name (default is 'petitions_website/').
-    state (str, optional): The state or category name to append to the base directory (default is 'all').
-    clear_all (bool): Remove previously downloaded files
-
-    Returns:
-    str: The path to the created data directory.
-    """
-
-    # Create child directory
-    data_path = os.path.join(data_dir, base_directory)
-    if not os.path.exists(data_path):
-        os.makedirs(data_path)
-    
-    # Get current date
-    current_date = datetime.today().strftime('%Y-%m-%d')
-    
-    directory = base_directory + current_date + '/'
-    data_path = os.path.join(data_dir, directory)
-    if not os.path.exists(data_path):
-        os.mkdir(data_path)
-
-    if clear_all:
-        files = glob.glob(data_path + '/*')
-        for f in files:
-            os.remove(f)
-    return data_path
+from utils import setup_folders
 
 def setup_browser_bot(data_path, headless=False, browser='chrome'):
     """
