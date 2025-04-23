@@ -3,13 +3,7 @@
 
 ## Project Description
 
-This project automates the collection and processing of lobby register data from official German sources. It performs three main functions:
-
-    Downloads PDF documents from the German Lobby Register website
-
-    Combines individual PDFs into a single consolidated document
-
-    Extracts relevant information from the PDFs and converts it to CSV format
+This project automates the collection and processing of lobby register data from [official German Bundestag Website](https://www.lobbyregister.bundestag.de/startseite?lang=de).
 
 ### Features
 
@@ -40,8 +34,9 @@ Run the main script with:
 ``` python main.py ```
 
 Output Structure
-
+```
 /output
 ├── raw_pdfs/           # Downloaded individual PDFs
 ├── merged.pdf          # Combined PDF
 └── lobby_data.csv      # Final extracted data
+```
