@@ -5,6 +5,8 @@
 
 This project automates the collection and processing of lobby register data from [official German Bundestag Website](https://www.lobbyregister.bundestag.de/startseite?lang=de).
 
+Please note: This project was developed prior to whole batch JSON downloads being available on the website. 
+
 ### Features
 
     ⚡ Automated PDF downloading from German Lobby Register
