@@ -1,4 +1,6 @@
 # Collect Lobby Register Data in Germany
+![Logo](./bundestag_register.png)
+
 ## Project Description
 
 This project automates the collection and processing of lobby register data from official German sources. It performs three main functions:
