@@ -13,11 +13,11 @@ This project automates the collection and processing of lobby register data from
 
 ### Features
 
-    Automated PDF downloading from German Lobby Register
+    ⚡ Automated PDF downloading from German Lobby Register
 
-    PDF merging capability
+    📂 PDF merging into single file
 
-    Data extraction from PDF to structured CSV format
+    🗃️ Data extraction from PDF to structured CSV format
 
 Requirements
 
@@ -39,12 +39,9 @@ Run the main script with:
 
 ``` python main.py ```
 
-Output
+Output Structure
 
-The program generates:
-
-    Downloaded PDF files in /PDFs/date directory
-
-    Combined PDF in /outputA directory
-
-    Extracted CSV data in /outputB directory
+/output
+├── raw_pdfs/           # Downloaded individual PDFs
+├── merged.pdf          # Combined PDF
+└── lobby_data.csv      # Final extracted data
