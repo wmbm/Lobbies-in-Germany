@@ -1,21 +1,17 @@
 # Collect Lobby Register Data in Germany
+![Logo](./bundestag_register.png)
+
 ## Project Description
 
-This project automates the collection and processing of lobby register data from official German sources. It performs three main functions:
-
-    Downloads PDF documents from the German Lobby Register website
-
-    Combines individual PDFs into a single consolidated document
-
-    Extracts relevant information from the PDFs and converts it to CSV format
+This project automates the collection and processing of lobby register data from [official German Bundestag Website](https://www.lobbyregister.bundestag.de/startseite?lang=de).
 
 ### Features
 
-    Automated PDF downloading from German Lobby Register
+    ⚡ Automated PDF downloading from German Lobby Register
 
-    PDF merging capability
+    📂 PDF merging into single file
 
-    Data extraction from PDF to structured CSV format
+    🗃️ Data extraction from PDF to structured CSV format
 
 Requirements
 
@@ -37,12 +33,10 @@ Run the main script with:
 
 ``` python main.py ```
 
-Output
-
-The program generates:
-
-    Downloaded PDF files in /PDFs/date directory
-
-    Combined PDF in /outputA directory
-
-    Extracted CSV data in /outputB directory
+Output Structure
+```
+/output
+├── raw_pdfs/           # Downloaded individual PDFs
+├── merged.pdf          # Combined PDF
+└── lobby_data.csv      # Final extracted data
+```
