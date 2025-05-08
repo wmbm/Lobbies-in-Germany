@@ -28,8 +28,9 @@ Installation
     Clone this repository
 
     Install required packages: pip install -r requirements.txt
+    
 
-Usage (to be updated)
+### Usage (to be updated)
 
 Run the main script with:
 
