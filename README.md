@@ -29,7 +29,7 @@ Installation
 
     Install required packages: pip install -r requirements.txt
 
-Usage
+Usage (to be updated)
 
 Run the main script with:
 
